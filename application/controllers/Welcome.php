@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 	{
 		// $arreglo['variable_independiente']="HOLA MUNDO :v";
 		// $this->l,oad->view('welcome_message',$arreglo);
-		$this->load->view('formulario/vista_form');
+		$this->load->view('formulario/Formu');
 	}
 
 

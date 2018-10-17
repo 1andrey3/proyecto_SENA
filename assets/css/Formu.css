@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+    margin: 0;
+}
+
+.Formulario{
+	width: 561px;
+    height: 550px;
+    position: relative;
+    margin: 48px auto;
+    background-color: yellow;
+    border-radius: 5px;
+}
+.Titulo{
+	color: red;
+	text-align: center;
+	font-size: 60px;
+}
+
+.Nod{
+	border-radius: 5px;
+	border:none;
+	width: 261px;
+	height: 30px;
+	margin-left:140px; 
+	margin-top: 20px;
+}
+
+.Nomb{
+	border-radius: 5px;
+	border:none;
+	width: 261px;
+	height: 30px;
+	margin-left:140px; 
+	margin-top: 30px;
+}
+
+.Ape{
+	border-radius: 5px;
+	border:none;
+	width: 261px;
+	height: 30px;
+	margin-left:140px; 
+	margin-top: 30px;
+}
+
+.Correo{
+	border-radius: 5px;
+	border:none;
+	width: 261px;
+	height: 30px;
+	margin-left:140px; 
+	margin-top: 30px;
+}
+
+.Selector{
+	border-radius: 5px;
+	border:none;
+	width: 261px;
+	height: 30px;
+	margin-left:140px; 
+	margin-top: 30px;
+}
+
+.Envio{
+	width: 76px ;
+	height: 50px ;
+    margin-left:230px;
+    margin-top: 44px;
+}
