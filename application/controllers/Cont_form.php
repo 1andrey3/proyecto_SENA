@@ -20,10 +20,16 @@
                 'Email' =>$this->input->post("correo"),
                 'Rol' =>$this->input->post("rol")
             );
-
             // comentario
             $this->Modelos->guardar($datos);
+            // $this->vista_tabla();
+            header('location: http://localhost/proyecto_SENA/Cont_form/vista_tabla');
+        }
 
+        public function vista_tabla()
+        {   
+            $datas['users'] = $this->Modelos->get_usuarios();
+            $this->load->view('formulario/Vista_form', $datas);
         }
     }
 ?>
