@@ -30,6 +30,7 @@
         {   
             $datas['users'] = $this->Modelos->get_usuarios();
             $this->load->view('formulario/Vista_form', $datas);
+            // $this->load->view('formulario/TablaBootstrap/Bootstrap4/vista_form', $datas);
         }
     }
 ?>

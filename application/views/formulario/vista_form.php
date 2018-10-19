@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/proyecto_SENA/assets/css/imagen.css">
     <title>Base de datos</title>
 </head>
-<?php 
-
-
-?>
 <body>
-    <table border="2" cellspacing="5" cellpadding="9">
-        <thead>
-            <th>Número de Documento</th>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Email</th>
-            <th>Rol</th>
-        </thead>
-        <?php
-        for($cont=0; $cont < count($users) ; $cont++){
-            echo "<tr> <td>".$users[$cont]->No_documento."</td>";   
-            echo "<td>".$users[$cont]->Nombres."</td>";
-            echo "<td>".$users[$cont]->Apellidos."</td>";  
-            echo "<td>".$users[$cont]->Email."</td>";  
-            echo "<td>".$users[$cont]->rol."</td></tr>";
-        }
-         
-             
-        ?>
-    </table>
+    <div class="container">
+        <table id="la_tabla" class="table table-bordered table-hover table-striped">
+            <thead class="thead-dark">
+                <th>Número de Documento</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Rol</th>
+            </thead>
+            <?php
+            for($cont=0; $cont < count($users) ; $cont++){
+                echo "<tr> <td>".$users[$cont]->No_documento."</td>";   
+                echo "<td>".$users[$cont]->Nombres."</td>";
+                echo "<td>".$users[$cont]->Apellidos."</td>";  
+                echo "<td>".$users[$cont]->Email."</td>";  
+                echo "<td>".$users[$cont]->rol."</td></tr>";
+            }
+            ?>
+        </table>
+    </div>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="TablaBootstrap/bootstrap4/Animaciones/TB.js"></script>
+
+    <script>
+        $('#la_tabla').DataTable();
+    </script>
 </body>
 </html>
