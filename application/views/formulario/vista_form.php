@@ -11,8 +11,10 @@
 </head>
 <body>
     <div class="container">
+
+    <button id="cambiar">cambiar color</button>
         <table id="la_tabla" class="table table-bordered table-hover table-striped">
-            <thead class="thead-dark">
+            <thead class="fondo_gris" id="fonto">
                 <th>Número de Documento</th>
                 <th>Nombres</th>
                 <th>Apellidos</th>
@@ -34,10 +36,22 @@
   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="TablaBootstrap/bootstrap4/Animaciones/TB.js"></script>
+    <!-- <script type="text/javascript" src="TablaBootstrap/bootstrap4/Animaciones/TB.js"></script> -->
 
     <script>
         $('#la_tabla').DataTable();
+
+
+        $('#cambiar').click(function(){
+            var y = $('#fonto');
+            var x = $('#fonto').attr('class');
+            console.log(x)
+            if (x == 'fondo_gris') {
+                y.attr('class', 'fondo_azul')
+            } else {
+                y.attr('class', 'fondo_gris')
+            }
+        });
     </script>
 </body>
 </html>
