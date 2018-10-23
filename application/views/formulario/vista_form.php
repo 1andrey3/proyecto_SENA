@@ -11,9 +11,8 @@
 </head>
 <body>
     <div class="container">
-
     <button id="cambiar">cambiar color</button>
-        <table id="la_tabla" class="table table-bordered table-hover table-striped">
+        <table id="la_tabla" class="table table-bordered table-hover  table-striped">
             <thead class="fondo_gris" id="fonto">
                 <th>Número de Documento</th>
                 <th>Nombres</th>
@@ -39,7 +38,7 @@
     <!-- <script type="text/javascript" src="TablaBootstrap/bootstrap4/Animaciones/TB.js"></script> -->
 
     <script>
-        $('#la_tabla').DataTable();
+        // $('#la_tabla').DataTable();
 
 
         $('#cambiar').click(function(){

@@ -1,12 +1,20 @@
 function numeros(e){
-    tecla = (document.all) ? e.keyCode : e.which
-    if (tecla==8) return true; // 3
-    patron =/[\d]/; 
+    console.log(e)
+    // console.log(document.all)
+    // tecla = (document.all) ? e.keyCode : e.which;
+    if (document.all){
+        tecla = e.keyCode;
+    }else{
+        tecla = e.which;
+    }
+    if (tecla==8) return true; // 3{}
+    patron =/[\d]/;
     te = String.fromCharCode(tecla); // 5
     return patron.test(te);
 }
 var cont=true;
-function validar(){
+
+var validar = function(){
     var doc = document.getElementById("doc").value;
     var Nom = document.getElementById("Nom").value;
     var App= document.getElementById("App").value;
@@ -26,13 +34,5 @@ function validar(){
     }else{
         alert("Datos envíados");
         return true;
-        // if(c== null || c.length == 0 || /^\s+$/.test(c)){
-        //     document.getElementById("alerta").innerHTML = '<div id="alerta"><b>Campo contraseña vacío.</b></div>';
-        //    formu.contrasena.focus();
-        //     return false;
-        // }else{
-        //     return true;
         }
     }
-
-    

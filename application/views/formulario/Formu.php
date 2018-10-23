@@ -17,7 +17,7 @@
 					AGREGAR REGISTRO
 				</div>
 				<div id="error" class="col-12 text-center border-redounded"></div>
-				<input class="Nod" type="Text" name="nodocu"     id="doc" placeholder="Documento" maxlength="12" onkeypress="return numeros(event)">
+				<input class="Nod" type="Text" name="nodocu"     id="doc" placeholder="Documento" maxlength="12" onkeydown="return numeros(event)">
 				<input class="Nomb" type="text" name="nombres"   id="Nom" placeholder="Nombres">
 				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos">
 				<input class="Correo" type="email" name="correo" id="Mail" placeholder="Correo electronico">
@@ -27,10 +27,9 @@
 					<option value="Contador">Contador</option>
 					<option value="Recepcionista">Recepcionista</option>
 				</select>
-				<input class="Envio btn bg-info text-light" type="submit" name="agregar" ">
+				<input class="Envio btn btn-light  bg-dark text-light" type="submit" name="agregar" ">
 			</form>
 			<div class="transiciones">
-					
 			</div>
 			<div class="otro_div">uno</div>
 			
