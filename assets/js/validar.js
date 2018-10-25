@@ -25,13 +25,20 @@ var validar = function()
     var Nom2 = document.getElementById("Nom2").value;
     var App= document.getElementById("App").value;
     var Mail= document.getElementById("Mail").value;
+    var telefono = document.getElementById("telefono").value;
     var rol= document.getElementById("rol");
+<<<<<<< HEAD
+    var sexo = document.getElementsByName("sexo");
+
+    if(doc.length == 0  || Nom.length==0 || App.length==0 || Mail.length==0|| rol.value==""||telefono.length==0)
+=======
     var mail2= document.getElementById("Mail2").value;
     var index= mail2.indexOf(".");
     var mail= Mail.length;
     console.log(". ="+index);
     console.log("lenght:"+mail)
     if(doc.length == 0  || Nom1.length==0 ||Nom2.length==0 || App.length==0 || Mail.length==0|| rol.value=="" || mail2.length==0)
+>>>>>>> e9253ea575ab886a034c5c77daf34cba18795ab9
     {
         if(cont==true)
         {
@@ -47,8 +54,13 @@ var validar = function()
             cont=true;
         }
         return false;
+<<<<<<< HEAD
+
+    }else
+=======
     }
     if(doc.length <5 )
+>>>>>>> e9253ea575ab886a034c5c77daf34cba18795ab9
     {
         if (f==true) 
         {
@@ -91,4 +103,27 @@ var validar = function()
         console.log("NO HAY UN PUNTO")
         return false;
     }
+
+    if (document.getElementById("Hombre").checked==true || document.getElementById("Mujer").checked[1]==true) {
+        alert("lo que sea")
+
+
+        }
+        else{
+             alert("Seleccione el sexo con el que nacio");
+             return false;
+    }
 }
+
+
+
+
+
+
+
+
+
+    if (telefono.length<7||telefono.length) {
+        document.getElementById("error").innerHTML = '<div class="borde1" id="error"><b>Su telefono fijo no puede tener mas de 7 numeros</b></div>';
+    }
+    else if (telefono.length) {}
