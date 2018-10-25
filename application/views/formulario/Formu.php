@@ -18,7 +18,10 @@
 				</div>
 				<div id="error" class="col-12 text-center border-redounded"></div>
 				<input class="Nod" type="Text" name="nodocu"     id="doc" placeholder="Documento" maxlength="11" onkeydown="return numeros(event)">
-				<input class="Nomb" type="text" name="nombres"   id="Nom" placeholder="Nombres">
+				<div class="row form-group">
+					<input class="form-control col-5 m-4 border border-danger" type="text" name="nombres"   id="Nom" placeholder="Nombres">
+					<input class="form-control col-5 m-4" type="text" name="nombres"   id="Nom" placeholder="Nombres">
+				</div>
 				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos">
 				<input class="Correo" type="email" name="correo" id="Mail" placeholder="Correo electronico">
 				<select class="Selector" name="rol" id="rol">
