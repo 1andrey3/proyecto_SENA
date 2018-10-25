@@ -2,11 +2,16 @@
 	padding: 0;
     margin: 0;
 }
-.borde{
-	border: 3px inset red;
+.arroba{
+	width: 40px;
+	height: 38px;
+	transition: 0.5s;
 }
-.borde1{
-	border: 3px inset black;
+.arroba:hover{
+	color: blue;
+	font-weight: bold;
+	/* font-size: 25px; */
+	height: 50px;
 }
 body{
 	background-image: url("../img/uno.jpg");

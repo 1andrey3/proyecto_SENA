@@ -35,12 +35,15 @@ var validar = function()
     {
         if(cont==true)
         {
-            document.getElementById("error").style.color ="black";
-            document.getElementById("error").innerHTML='<div class="borde1" id="error"><b>Por favor, verifique si tiene campos vacíos.</b></div>';
+            // $("#error").show('900');
+            document.getElementById("error").innerHTML='<div id="error"><b>Por favor, verifique si tiene campos vacíos.</b></div>';
+            document.getElementById("error").style.border="3px inset black";
+            document.getElementById("error").style.transition="0.5s";
             cont=false;
         }else
         {
-            document.getElementById("error").innerHTML = '<div class="borde" id="error"><b>Por favor, verifique si tiene campos vacíos.</b></div>';
+            document.getElementById("error").innerHTML = '<div id="error"><b>Por favor, verifique si tiene campos vacíos.</b></div>';
+            document.getElementById("error").style.border="8px inset red";
             cont=true;
         }
         return false;
