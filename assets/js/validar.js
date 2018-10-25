@@ -24,8 +24,11 @@ var validar = function()
     var Nom = document.getElementById("Nom").value;
     var App= document.getElementById("App").value;
     var Mail= document.getElementById("Mail").value;
+    var telefono = document.getElementById("telefono").value;
     var rol= document.getElementById("rol");
-    if(doc.length == 0  || Nom.length==0 || App.length==0 || Mail.length==0|| rol.value=="")
+    var sexo = document.getElementsByName("sexo");
+
+    if(doc.length == 0  || Nom.length==0 || App.length==0 || Mail.length==0|| rol.value==""||telefono.length==0)
     {
         if(cont==true)
         {
@@ -38,6 +41,7 @@ var validar = function()
             cont=true;
         }
         return false;
+
     }else
     {
         if(doc.length <5 )
@@ -58,4 +62,27 @@ var validar = function()
             return true;
         }
     }
+
+    if (document.getElementById("Hombre").checked==true || document.getElementById("Mujer").checked[1]==true) {
+        alert("lo que sea")
+
+
+        }
+        else{
+             alert("Seleccione el sexo con el que nacio");
+             return false;
+    }
 }
+
+
+
+
+
+
+
+
+
+    if (telefono.length<7||telefono.length) {
+        document.getElementById("error").innerHTML = '<div class="borde1" id="error"><b>Su telefono fijo no puede tener mas de 7 numeros</b></div>';
+    }
+    else if (telefono.length) {}

@@ -12,7 +12,7 @@
 <body  oncopy="return false" oncut="return false" onpaste="return false" >
 	<div class="container-fluid bg-dark">
 		<div class="Formulario border border-danger">
-			<form action="Cont_form/subir_datos" method="POST"   onsubmit="return validar()">
+			<form action="Cont_form/subir_datos" method="POST"    onsubmit="return validar()">
 				<div class="Titulo">
 					AGREGAR REGISTRO
 				</div>
@@ -22,7 +22,13 @@
 					<input class="form-control col-5 m-4 border border-danger" type="text" name="nombres"   id="Nom" placeholder="Nombres">
 					<input class="form-control col-5 m-4" type="text" name="nombres"   id="Nom" placeholder="Nombres">
 				</div>
-				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos">
+				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos"><br>
+			    <input type="radio" name="sexo" id="Hombre" value="Hombre">Hombre<br>
+			    <input type="radio" name="sexo" id="Mujer" value="Mujer">Mujer<br>
+			    <div class="row form-group">
+				<input type="text" class="col-4 offset-4 form-control mt-4" name="telef" id="telefono" placeholder="Telefono" onkeydown="return numeros(event)" maxlength="10">
+			    </div>
+
 				<input class="Correo" type="email" name="correo" id="Mail" placeholder="Correo electronico">
 				<select class="Selector" name="rol" id="rol">
 					<option disabled selected value="">Seleccione Rol</option>
