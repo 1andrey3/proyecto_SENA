@@ -19,9 +19,10 @@
 				<div id="error" class="col-12 text-center border-redounded"></div>
 				<input class="Nod" type="Text" name="nodocu"     id="doc" placeholder="Documento" maxlength="11" onkeydown="return numeros(event)">
 				<div class="row form-group">
-					<input class="form-control col-5 m-4 border border-danger" type="text" name="nombres"   id="Nom" placeholder="Nombres">
-					<input class="form-control col-5 m-4" type="text" name="nombres"   id="Nom" placeholder="Nombres">
+					<input class="form-control col-5 m-4 border border-info" type="text" name="nombres"   id="Nom1" placeholder="Primer Nombre">
+					<input class="form-control col-5 m-4 border border-info" type="text" name="nombres"   id="Nom2" placeholder="Segundo Nombre">
 				</div>
+<<<<<<< HEAD
 				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos"><br>
 			    <input type="radio" name="sexo" id="Hombre" value="Hombre">Hombre<br>
 			    <input type="radio" name="sexo" id="Mujer" value="Mujer">Mujer<br>
@@ -30,6 +31,15 @@
 			    </div>
 
 				<input class="Correo" type="email" name="correo" id="Mail" placeholder="Correo electronico">
+=======
+				<input class="Ape" type="text" name="apellidos"  id="App" placeholder="Apellidos">
+				<div class="form-row m-5">
+					<input class="form-control  col-6 offset-1" type="text	" name="correo" id="Mail" placeholder="Correo electronico">
+					<label class="input-group-text" for="Mail2" >@</label>
+					<input type="text" class="form-control col-3" placeholder="ej. 'Gmail.com'" id="Mail2">
+				</div>
+				
+>>>>>>> e9253ea575ab886a034c5c77daf34cba18795ab9
 				<select class="Selector" name="rol" id="rol">
 					<option disabled selected value="">Seleccione Rol</option>
 					<option value="Ingeniero">Ingeniero</option>
